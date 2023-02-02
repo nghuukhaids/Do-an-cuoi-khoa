@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm</title>
+    <link rel="stylesheet" href="./Trang-chu.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="./doan.js"></script>
+    <script type="text/javascript" src="./jquery/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="./Product-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./part3.css">
+</head>
+
+<body>
+    <div class="top-nav d-flex justify-content-between align-items-center" id="top-nav">
+        <div class="ps-5 fw-bold"><i class="bi bi-telephone-fill pe-2"></i>0934.343.324</div>
+        <div class="pe-5 d-flex justify-content-end " style="width:500px">
+            <div> <i class="bi bi-person-circle pe-2"></i>Tài khoản</div>
+            <div style="padding-left:5rem"><i class="bi bi-bag-check-fill pe-2"></i> Giỏ hàng (0)</div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div>
+                    <a class="navbar-brand" href="./Trang-chu.html"><img style="width:100px"
+                            src="./img/icon/KRIK-icon.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div id="nav-bar-ul">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex mx-auto" style="width:100%">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TẾT QUÝ MÃO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-link-id" href="./Product-Category.html">ÁO NAM</a>
+                            <div class="drop-menu">
+                                <a class="nav-link" href="#">ÁO SƠ MI</a>
+                                <a class="nav-link" href="#">ÁO POLO</a>
+                                <a class="nav-link" href="#">ÁO LEN</a>
+                                <a class="nav-link" href="#">ÁO KHOÁC</a>
+                                <a class="nav-link" href="#">ÁO NỈ</a>
+                                <a class="nav-link" href="#">ÁO BLAZER</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Product-Category.html">QUẦN NAM</a>
+                            <div class="drop-menu">
+                                <a class="nav-link" href="#">QUẦN JEAN</a>
+                                <a class="nav-link" href="#">QUẦN TÂY</a>
+                                <a class="nav-link" href="#">QUẦN JOGGER</a>
+                                <a class="nav-link" href="#">QUẦN KAKI</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Product-Category.html">PHỤ KIỆN</a>
+                            <div class="drop-menu">
+                                <a class="nav-link" href="#">QUẦN LÓT</a>
+                                <a class="nav-link" href="#">DÂY LƯNG</a>
+                                <a class="nav-link" href="#">BALO</a>
+                                <a class="nav-link" href="#">GIÀY DÉP</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TIN TỨC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">GIỚI THIỆU</a>
+                        </li>
+                    </ul>
+                </div>
+                <div style="width:30%">
+                    <div class="search-form">
+                        <form class="d-flex" style="padding-left:40%" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Tìm kiếm..."
+                                aria-label="Search">
+                            <div class="icon">
+                                <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                        fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                    </svg></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </nav>
+    <div class="product-address d-flex " style="padding-top:100px;width: 90rem">
+        <span class="fw-bold" style="padding:0 20px;font-size:15px"> <i class="bi bi-house-door-fill"></i> Trang
+            chủ</span>
+        <span class="fw-bold" style="padding:0 20px;font-size:15px">Ác khoác</span>
+        <span style="padding:0 20px;font-size:15px">Áo khoác dạ</span>
+    </div>
+    <div class="container d-flex">
+        <div class="product-img">
+            <div class="main">
+                <img class="main-img" src="./img/ao nam/ao nam 1.jpg">
+                <div class="prev-btn"><a href="javascript:void(0):"><i class="bi bi-arrow-left-square"></i></a></div>
+                <div class="next-btn"><a href="javascript:void(0):"><i class="bi bi-arrow-right-square"></i></a></div>
+            </div>
+            <div class="list-img d-flex">
+                <div class="active-img"><img src="./img/ao nam/ao nam 1.jpg" alt=""></div>
+                <div><img src="./img/ao nam/ao nam 2.jpg" alt=""></div>
+                <div><img src="./img/ao nam/ao nam 3.jpg" alt=""></div>
+                <div><img src="./img/ao nam/ao nam 4.jpg" alt=""></div>
+                <div><img src="./img/ao nam/ao nam 5.jpg" alt=""></div>
+            </div>
+        </div>
+        <div class="product-detail">
+            <b style="font-size:20px">Áo Khoác Dạ 0416</b>
+            <hr>
+            <b style="font-size:35px">999.000đ</b>
+            <p style="font-weight:500;padding-top:10px;margin-bottom:0">MÀU SẮC</p>
+            <div class="color d-flex">
+                <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-bs-custom-class="custom-tooltip" data-bs-title="Đen">
+                    <div class="black"></div>
+                </button>
+                <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-bs-custom-class="custom-tooltip" data-bs-title="Xám">
+                    <div class="grey"></div>
+                </button>
+            </div>
+            <p style="font-weight:500;padding-top:10px;margin-bottom:0;padding-bottom:10px">KÍCH THƯỚC</p>
+            <div class="size d-flex" style="padding-bottom:10px">
+                <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
+                <label class="btn btn-secondary" for="option1">M</label>
+                <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                <label class="btn btn-secondary" for="option2">L</label>
+                <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+                <label class="btn btn-secondary" for="option3">XL</label>
+                <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+                <label class="btn btn-secondary" for="option4">XXL</label>
+            </div>
+            <div class="number-order d-flex">
+                <div class="less numberbtn">-</div>
+                <div class="number">
+                    <p>0</p>
+                </div>
+                <div class="more numberbtn">+</div>
+            </div>
+            <div class="buy-btn d-flex" style=" margin-top:10px">
+                <button type="button" class="btn btn-dark" style="margin-right:10px">THÊM VÀO GIỎ HÀNG</button>
+                <button type="button" class="btn btn-dark">MUA NGAY</button>
+            </div>
+            <div class="save-share d-flex">
+                <div class="save"><i class="bi bi-suit-heart-fill"></i>
+                    <div style="font-weight:500">Yêu thích</div>
+                </div>
+                <div class="share d-flex">CHIA SẺ<a href="https://www.facebook.com/khai.huu.35/"><i
+                            class="bi bi-facebook"></i></a><a href="https://twitter.com/?lang=vi" class="twitter"><i
+                            class="bi bi-twitter"></i></a><a href="https://www.google.com/" class="google"><i
+                            class="bi bi-google"></i></a>
+                </div>
+            </div>
+            <div class="inventory">7 cửa hàng còn sản phẩm này</div>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>- Tỉnh thành -</option>
+                <option value="1">Hà nội</option>
+                <option value="2">Thành phố Hồ Chí Minh</option>
+                <option value="3">Đà Nẵng</option>
+                <option value="4">Vinh</option>
+                <option value="5">Quảng Nam</option>
+                <option value="6">Quảng Ngãi</option>
+                <option value="7">Huế</option>
+            </select>
+            <div class="store-inventory" style="height:200px;overflow:auto;margin-top: 10px;padding:10px">
+                <p class="hn"><i class="bi bi-geo-alt-fill"></i> <b>209 Bạch Mai:</b><br>0982022969209(Còn hàng)</p>
+                <p class="hn"><i class="bi bi-geo-alt-fill"></i> <b>171 Lê Lợi:</b><br>0982022969209(Còn hàng)</p>
+                <p class="hn"><i class="bi bi-geo-alt-fill"></i> <b>119 Nguyễn Trường
+                        Tộ:</b><br>0982022969209(Còn hàng)</p>
+                <p class="hn"><i class="bi bi-geo-alt-fill"></i> <b>12 Đồng Khởi:</b><br>0982022969209(Còn
+                    hàng)</p>
+                <p class="hn"><i class="bi bi-geo-alt-fill"></i> <b>31 Hải
+                        Phòng:</b><br>0982022969209(Còn hàng)</p>
+                <p class="hn"><i class="bi bi-geo-alt-fill"></i> <b>567 Bà
+                        Triệu:</b><br>0982022969209(Còn hàng)</p>
+            </div>
+            <div class="accordion accordion-flush" id="accordionFlushExample" style="margin-top: 20px;    border:2px solid rgba(128, 128, 128, 0.227) 
+            ">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"
+                            style="font-size:15px">
+                            CHÍNH SÁCH TỪ KRIK
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body" style="font-size:12px"> ►Đổi hàng trong vòng 5 ngày.<br>
+                            ►Giảm đến 15% trên tổng hóa đơn khi mua hàng ( tại cửa hàng ) vào tháng sinh nhật.<br>
+                            ►Giao hàng nội thành Hà Nội chỉ từ 15.000đ trong vòng 24 giờ.<br>
+                            ►Tích điểm 3-8% giá trị đơn hàng cho mỗi lần mua và trừ tiền vào lần mua tiếp theo.<br>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            HƯỚNG DẪN BẢO QUẢN </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body" style="font-size:12px">►Có thể giặt tay hay giặt máy đều được (ưu
+                            tiên giặt tay để tăng
+                            tuổi thọ của sản phẩm) <br>
+                            ►Lộn trái sản phẩm khi giặt, không giặt chung sản phẩm trắng với quần áo tối màu. <br>
+                            ►Sử dụng xà phòng trung tính,không sử dụng xà phòng có chất tẩy mạnh. <br>
+                            ►Không sử dụng chất tẩy, không ngâm sản phẩm. <br>
+                            ►Hạn chế sấy ở nhiệt độ cao, bảo quản nơi khô ráo, thoáng mát, không phơi trực tiếp dưới ánh
+                            nắng mặt trời.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-sm">
+        <div class="post-control d-flex">
+            <b>0 bình luận</b>
+            <div class="post-filter-control">
+                <label for="post">Sắp xếp theo</label>
+                <select name="post" id="post">
+                    <option value="volvo">Cũ nhất</option>
+                    <option value="saab">Mới nhất</option>
+                </select>
+            </div>
+        </div>
+        <div class="input-group mb-3" style="margin-top:20px;width:100%">
+            <input type="text" class="form-control" placeholder="Viết bình luận..." aria-label="Recipient's username"
+                aria-describedby="button-addon2" id="comment-form">
+            <button class="btn btn-outline-secondary" style="margin:0; padding:20px" type="button"
+                id="button-addon2">Đăng</button>
+        </div>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                    type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">CÓ THỂ BẠN
+                    THÍCH</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                    type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">SẢN PHẨM BÁN
+                    CHẠY</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                tabindex="0">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col">
+                            <li class="img-container"> <a href="./Product-detail.html"><img
+                                        src="./img/san pham moi/san-pham-moi-1.jpg"></a></li>
+                            <p style="padding-top:10px">Áo khoác nỉ</p>
+                            <p><b>999.000đ</b></p>
+                        </div>
+                        <div class="col">
+                            <li class="img-container"><a href="./Product-detail.html"><img
+                                        src="./img/san pham moi/san-pham-moi-2.jpg"></a></li>
+                            <p style="padding-top:10px">Áo khoác nỉ</p>
+                            <p><b>999.000đ</b></p>
+                        </div>
+                        <div class="col">
+                            <li class="img-container"><a href="./Product-detail.html"><img
+                                        src="./img/san pham moi/san-pham-moi-3.jpg"></a></li>
+                            <p style="padding-top:10px">Áo blazer</p>
+                            <p><b>999.000đ</b></p>
+                        </div>
+                        <div class="col">
+                            <li class="img-container"><a href="./Product-detail.html"><img
+                                        src="./img/san pham moi/san-pham-moi-4.jpg"></a></li>
+                            <p style="padding-top:10px">Áo phao</p>
+                            <p><b>999.000đ</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col">
+                            <li class="img-container"><a href="./Product-detail.html"><img
+                                        src="./img/san pham moi/san-pham-moi-2.jpg"></a></li>
+                            <p style="padding-top:10px">Áo khoác nỉ</p>
+                            <p><b>999.000đ</b></p>
+                        </div>
+                        <div class="col">
+                            <li class="img-container"> <a href="./Product-detail.html"><img
+                                        src="./img/san pham moi/san-pham-moi-1.jpg"></a></li>
+                            <p style="padding-top:10px">Áo khoác nỉ</p>
+                            <p><b>999.000đ</b></p>
+                        </div>
+                        <div class="col">
+                            <li class="img-container"><a href="./Product-detail.html"><img
+                                        src="./img/san pham moi/san-pham-moi-4.jpg"></a></li>
+                            <p style="padding-top:10px">Áo phao</p>
+                            <p><b>999.000đ</b></p>
+                        </div>
+                        <div class="col">
+                            <li class="img-container"><a href="./Product-detail.html"><img
+                                        src="./img/san pham moi/san-pham-moi-3.jpg"></a></li>
+                            <p style="padding-top:10px">Áo blazer</p>
+                            <p><b>999.000đ</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- part3 -->
+    <div class="innerHomeStore">
+        <div class="imgStore">
+            <img src="./image/20220413_jqbMCPP8L1OG4UfbMPS8SM6K.png" alt="Ảnh minh họa">
+        </div>
+    </div>
+    <div class="innerInfo">
+        <div class="infoContent">
+            <div style="font-size: 14px;font-weight: 500;">GỌI MUA HÀNG ( 08:30-22:00 )</div>
+            <div class="phone">
+                <div class="phoneIcon">
+                    <i class="fa fa-phone" style="font-size:14px; color: white;"></i>
+                </div>
+                <a class="phoneNumber" href="tel:0982022969">0982022969</a>
+            </div>
+            <div style="font-size: 11px;"> Tất cả các ngày trong tuần</div>
+        </div>
+        <div class="infoContent">
+            <div style="font-size: 14px;font-weight: 500;">GÓP Ý, KHIẾU NẠI ( 08:30-22:00 )</div>
+            <div class="phone">
+                <div class="phoneIcon">
+                    <i class="fa fa-phone" style="font-size:14px; color: white;"></i>
+                </div>
+                <a class="phoneNumber" href="tel:0915988888">0915988888</a>
+            </div>
+            <div style="font-size: 11px;"> Tất cả các ngày trong tuần</div>
+        </div>
+        <div class="infoContent">
+            <div style="font-size: 14px;font-weight: 500;">ĐĂNG KÝ NHẬN THÔNG TIN MỚI</div>
+            <div>
+                <div
+                    style="display: flex; flex-direction: row; margin-top: 13px;flex-wrap: wrap; max-width: 100%;row-gap: 5px;">
+                    <input type="text" placeholder="Nhập email của bạn tại đây..."
+                        style="box-sizing: border-box; padding:10px 16px; font-size:14px;border-radius: 0px; border: 1px solid #d0d0d0; outline: none;color: #252a2b; min-width: 120px; max-width: 100%;">
+                    <button style="border-radius: 0px; color: white; background: black; padding: 5px 10px;">Đăng
+                        ký</button>
+                </div>
+            </div>
+        </div>
+        <div class="infoContent">
+            <div style="font-size: 14px;font-weight: 500;">THEO DÕI CHÚNG TÔI</div>
+            <div class="followSocial">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/Krik.vn/"></a>
+                        <i class="fa fa-facebook" style="font-size: 35px;"></i>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/krik_vn/"></a>
+                        <i class="fa fa-instagram" style="font-size: 35px;"></i>
+                    </li>
+                    <li>
+                        <a href="https://shopee.vn/krik.vn"></a>
+                        <img style="width:35px;height:35px" src="./image/shopee_black.png">
+                    </li>
+                    <li>
+                        <a href="https://zalo.me/0982022969"></a>
+                        <img style="width:35px;height:35px" src="./image/zalo-logo-inkythuatso-1.png">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="policy">
+            <div style="font-size:14px; font-weight: 500; margin-bottom: 30px;">CHÍNH SÁCH VÀ QUY ĐỊNH</div>
+            <ul>
+                <li>
+                    <a href="#cachthucdathang">Cách thức đặt hàng</a>
+                </li>
+                <li>
+                    <a href="#chinhsachthanhvien">Chính sách thành viên</a>
+                </li>
+                <li>
+                    <a href="#chinhsachgiaohang">Chính sách giao hàng</a>
+                </li>
+                <li>
+                    <a href="#quydinhdoitra">Quy định đổi trả</a>
+                </li>
+                <li>
+                    <a href="#hinhthucthanhtoan">Hình thức thanh toán</a>
+                </li>
+                <li>
+                    <a href="#chinhsachbaomat">Chính sách bảo mật</a>
+                </li>
+                <li>
+                    <a href="#chinhsachkhieunai">Chính sách xử lý khiêu nại</a>
+                </li>
+                <li>
+                    <a href="#chinhsachkiemhang">Chính sách kiểm hàng</a>
+                </li>
+            </ul>
+        </div>
+        <div class="storeSystem">
+            <div style="font-size:14px; font-weight: 500; margin-bottom:30px">HỆ THỐNG CỬA HÀNG</div>
+            <ul>
+                <li>
+                    <span>►344 Cầu Giấy</span>
+                </li>
+                <li>
+                    <span>►132 Cầu Giấy</span>
+                </li>
+                <li>
+                    <span>►280 - 282 Nguyễn Trãi</span>
+                </li>
+                <li>
+                    <span>►167 Chùa Bộc</span>
+                </li>
+                <li>
+                    <span>►307H Bạch Mai</span>
+                </li>
+                <li>
+                    <span>►23 Chùa Bộc</span>
+                </li>
+                <li>
+                    <span>►209 Bạch Mai</span>
+                </li>
+                <li>
+                    <span>►189 Phố Nhổn</span>
+                </li>
+            </ul>
+        </div>
+        <div class="aboutUs">
+            <div style="font-size:14px; font-weight: 500; margin-bottom:30px">VỀ CHÚNG TÔI</div>
+            <div class="companyInfo">
+                <span class="bold">Công ty TNHH KRIK Việt Nam</span>
+                <div style="padding: 10px 0px;">
+                    <span class="bold">Địa chỉ:</span>
+                    <span class="light"> Số 344 Cầu Giấy, Phường Dịch Vọng, Quận Cầu Giấy, Thành phố Hà Nội</span>
+                </div>
+                <div>
+                    <span class="bold">Mã số doanh nghiệp</span>
+                    <span class="light"> 0108901419 do Sở kế hoạch và đầu tư thành phố Hà Nội cấp ngày 17/09/2019</span>
+                </div>
+                <div style="padding: 10px 0px">
+                    <span class="bold">Điện thoại:</span>
+                    <span class="light"> 0982.022.969</span>
+                </div>
+                <div>
+                    <span class="bold">Email:</span>
+                    <span class="light"> admin@krik.vn</span>
+                </div>
+            </div>
+            <img src="./image/logoSaleNoti.png">
+        </div>
+        <div class="fanpage">
+            <div style="font-size:14px; font-weight: 500; margin-bottom:30px;">FANPAGE CHÚNG TÔI</div>
+            <img src="./image/Screenshot_1.png" alt="">
+        </div>
+    </div>
+    <script>
+        let mainImg = document.querySelector('.main-img')
+        let listImg = document.querySelectorAll('.list-img img')
+        let prevBtn = document.querySelector('.prev-btn')
+        let nextBtn = document.querySelector('.next-btn')
+        let currentIndex = 0;
+        function updateImgByIndex(index) {
+            document.querySelectorAll('.list-img div').forEach(e => {
+                e.classList.remove('active-img')
+            })
+            currentIndex = index;
+            mainImg.src = listImg[index].getAttribute('src');
+            listImg[index].parentElement.classList.add('active-img')
+        }
+        listImg.forEach((imgClick, index) => {
+            imgClick.addEventListener("click", e => {
+                updateImgByIndex(index)
+            })
+        }
+        )
+        prevBtn.addEventListener('click', e => {
+            if (currentIndex == 0) {
+                currentIndex = listImg.length - 1
+            }
+            else {
+                currentIndex--
+            }
+            updateImgByIndex(currentIndex)
+        }
+        )
+        nextBtn.addEventListener('click', e => {
+            if (currentIndex == listImg.length - 1) {
+                currentIndex = 0
+            }
+            else {
+                currentIndex++
+            }
+            updateImgByIndex(currentIndex)
+        }
+        )
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+        let lessBtn = document.querySelector('.less')
+        let moreBtn = document.querySelector('.more')
+        let numberOrder = document.querySelector('.number p')
+        let num = 0;
+        lessBtn.addEventListener("click", lessNum => {
+            if (num > 0) {
+                num--;
+                numberOrder.innerText = num
+            }
+        })
+        moreBtn.addEventListener("click", moreNum => {
+            num++;
+            numberOrder.innerText = num
+        })
+        let heartIcon = document.querySelector('.save')
+        function changeColor() {
+            heartIcon.addEventListener("click", e => {
+                heartIcon.style.color = 'red';
+                console.log('ok');
+                black()
+            })
+        }
+        changeColor();
+        function black() {
+            heartIcon.addEventListener("click", e => {
+                heartIcon.style.color = 'black';
+                changeColor()
+            }
+            )
+        }
+    </script>
+</body>
+
+</html>

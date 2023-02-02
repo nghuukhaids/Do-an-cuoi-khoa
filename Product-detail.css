@@ -1,0 +1,254 @@
+.product-address span {
+    border-right: solid 1px grey;
+    font-size: 12px;
+}
+
+.container {
+    width: 100%;
+    margin-top: 30px
+}
+
+.main {
+    height: 500px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 500px;
+
+}
+
+.main-img {
+    width: 700px;
+    height: 500px;
+    object-fit: cover;
+
+}
+
+.list-img {
+    width: 700px;
+    height: 150px;
+    justify-content: space-between;
+
+}
+
+.list-img:hover {
+    cursor: pointer;
+}
+
+.list-img div {
+    flex: 1;
+    padding: 5px;
+
+}
+
+.active-img {
+    border: solid rgba(0, 0, 0, 0.804) 3px;
+    transition: 0.2s all ease-in-out;
+    transform: scale(1.1)
+}
+
+.list-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: cover;
+
+}
+
+
+
+.prev-btn {
+    position: absolute;
+    top: 5em;
+    left: 0.25em
+}
+
+.next-btn {
+    position: absolute;
+    top: 5em;
+    left: 16.25em
+}
+
+.main div {
+    font-size: 40px;
+
+}
+
+.main div a {
+    color: black
+}
+
+.black {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.grey {
+    width: 40px;
+    height: 40px;
+    background-color: grey;
+    border-radius: 50%;
+
+}
+
+.size div {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    text-align: center;
+    padding-top: 7px;
+    margin-right: 10px;
+}
+
+.numberbtn {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    text-align: center;
+    padding-top: 7px;
+    border: 1px solid #ccc
+}
+
+.numberbtn:hover {
+    cursor: pointer;
+}
+
+.number-order .number {
+    width: 80px;
+    height: 40px;
+    background-color: white;
+    text-align: center;
+    padding-top: 7px;
+    border: 1px solid #ccc
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bs-primary);
+}
+
+.product-detail {
+    margin-left: 150px;
+    width: 100%
+}
+
+.btn {
+    margin-right: 10px
+}
+
+.btn.btn-dark {
+    width: 200px;
+    height: 50px
+}
+
+.save {
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid grey;
+    border-radius: 10px;
+    display: flex;
+    padding: 20px;
+}
+
+.save-share {
+    gap: 30px;
+    margin: 20px 0
+}
+
+.save i {
+    padding-right: 10px;
+}
+
+.save:hover {
+    cursor: pointer;
+}
+
+.share {
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.share a i {
+    font-size: 30px;
+    color: black
+}
+
+.share a i:hover {
+    color: #1096f4
+}
+
+.inventory {
+    width: 90%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    justify-content: center;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: 200
+}
+
+.form-select {
+    margin-top: 20px;
+}
+
+.store-inventory::-webkit-scrollbar {
+    width: 5px;
+    /* Chiều rộng vùng chứa scrollbar */
+}
+
+.store-inventory::-webkit-scrollbar-track {
+    background: #ccc;
+    /* Màu nền ngoài của thanh scrollbar */
+}
+
+.store-inventory::-webkit-scrollbar-thumb {
+    background-color: #4d4d4d5c;
+    /* Màu của thanh cuộn (scroll thumb) */
+    border-radius: 5px;
+    /* Bo góc scroll thumb */
+}
+
+.store-inventory::-webkit-scrollbar-thumb:hover {
+    background-color: #171717b4;
+    /* Hiệu ứng di chuột đổi màu*/
+}
+
+.store-inventory {
+    border: 2px solid rgba(128, 128, 128, 0.227)
+}
+
+.post-control {
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+#comment-form {
+    height: 100px;
+    border: 2px solid grey
+}
+
+#myTab {
+    display: flex;
+    justify-content: center;
+}
+
+#myTab li button {
+    color: black
+}
+
+#myTab li button:focus {
+    border-bottom: solid 2px black
+}
+
+#button-addon2 {
+    z-index: -999
+}
+

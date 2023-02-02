@@ -1,0 +1,86 @@
+.filter-label {
+    justify-content: space-between;
+}
+
+.product-filter {
+    padding: 24px
+}
+
+#post {
+    border: none;
+    font-weight: 200
+}
+
+.product-detail-filter {
+    gap: 60px
+}
+
+.product-detail-filter i {
+    color: rgba(135, 134, 134, 0.46);
+    font-size: 10px;
+    padding-left: 5px;
+}
+
+.product-detail-filter div {
+    font-weight: 500
+}
+
+.filter li {
+    margin-right: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    height: 50px
+}
+
+.menu-filter {
+    gap: 50px;
+    position: absolute;
+    left: 11%
+}
+
+.drop-down-filter {
+    display: none;
+
+}
+
+.filter:hover .drop-down-filter {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left:-2%;
+    top: 34%;
+    background-color: white;
+    z-index: 1000;
+}
+
+.menu-filter {
+    background-color: white;
+    border-radius: 5px;
+    padding:15px
+}
+
+.color-filter i {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.form-check-input[type="checkbox"] {
+    border: 1px solid black
+}
+
+.form-check-input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+.page-nav{
+    justify-content: center;
+}
+.pagination li{
+    border: 1px rgb(84, 83, 83) solid
+}
+.pagination li a{
+    color:rgb(128, 127, 127)
+}
+.pagination li a:hover{
+    color:white;
+    background-color: black;
+}
