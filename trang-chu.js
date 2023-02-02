@@ -15,15 +15,15 @@ function addCart(productImg, productHeading, productPrice) {
     <td ><img style="width:70px;margin-right:10px" src="`+ productImg + `"
         alt=""></td>
 <td>
-    <b style="margin-right:10px">`+ productHeading + `</b>
+    <b style="padding-right:70px">`+ productHeading + `</b>
 </td>
 <td>
-    <span style="margin-right:30px">Số lượng:<span class="number-order"
-            style="padding:2px 10px;border:1px solid rgba(58, 58, 58, 0.722);border-radius:3px">1</span></span>
+    <span style="padding-right:70px">Số lượng<span class="number-order"
+            style="margin-left:10px;padding:2px 10px;border:1px solid rgba(58, 58, 58, 0.722);border-radius:3px">1</span></span>
 </td>
 <td>
-    <span style="margin-right:10px">Thành tiền <span class="product-price-detail"
-            style="padding:2px 4px;border:1px solid rgba(58, 58, 58, 0.722);border-radius:3px">`+ productPrice + `</span></span>
+    <span style="padding-right:70px">Thành tiền <span class="product-price-detail"
+            style="margin-left:10px;padding:2px 4px;border:1px solid rgba(58, 58, 58, 0.722);border-radius:3px">`+ productPrice + `</span></span>
 </td>
 <i id="cancel-btn" class="bi bi-x-lg"></i>
 </tr >`
