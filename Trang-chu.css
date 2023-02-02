@@ -199,7 +199,7 @@ a.nav-link {
     font-weight: 600;
     font-size: 30px;
     margin-bottom: 0;
-    margin-left: 7%
+    margin-left: 15%;
 }
 
 .col a img {
@@ -391,11 +391,14 @@ a.nav-link {
         display: block;
         border: none;
         background-color: white;
-        font-size: 30px
+        font-size: 30px;
+        z-index: 999
     }
 
     #btn-menu:focus .nav-bar-ul-res {
         display: block !important;
+
+
     }
 
     .res {
@@ -409,6 +412,24 @@ a.nav-link {
         right: 0;
         top: -10%;
         background-color: white;
-        height: 100vh
+        height: 100vh;
+        width: 100%;
+        padding-top: 10%
+    }
+
+    .sale-vu-bao-img {
+        width: 100%
+    }
+
+    #row-res {
+        margin-left: 0;
+    }
+
+    .col li a img {
+        width: 200px
+    }
+
+    .fanpage img {
+        width: 500px
     }
 }

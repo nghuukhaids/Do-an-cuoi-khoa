@@ -252,3 +252,17 @@
     z-index: -999
 }
 
+@media screen and (max-width: 576px) {
+    #top-nav{
+        width:100vw
+    }
+    #nav-control{
+        width:100vw
+    }
+    .container-fluid{
+        width:100vw
+    }
+    #search-id{
+        width:50%
+    }
+}
