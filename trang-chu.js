@@ -6,6 +6,11 @@ listBuyBtn.forEach(function (li, index) {
         let productImg = product.querySelector('.col img').src
         let productHeading = product.querySelector('.col p').innerText
         let productPrice = product.querySelector('.col b').innerText
+        let amountOrder = document.querySelector('.cart p b')
+        let amountOrder1 = document.querySelector('#cartBtn a span')
+        num++;
+        amountOrder.innerText = num
+        amountOrder1.innerText = num
         addCart(productImg, productHeading, productPrice)
     })
 })
@@ -37,22 +42,25 @@ function cartTotal() {
     let cartItem = document.querySelectorAll('tbody tr')
     let total = 0;
     for (let index = 0; index < cartItem.length; index++) {
+        let totalShow = document.querySelector('.money');
         let inputValue = cartItem[index].querySelector('.number-order').innerText;
         let productPrice = cartItem[index].querySelector('.product-price-detail').innerText;
         let newproductPrice1 = productPrice.replace('.', '')
         let newproductPrice2 = newproductPrice1.replace('₫', '')
         let newproductPrice3 = newproductPrice2.replace('.', '')
-        let totalA = Number(inputValue) * Number(newproductPrice3);
+        let totalA = 0
+        totalA = Number(inputValue) * Number(newproductPrice3);
         total = total + totalA;
         totalB = total.toLocaleString('de-DE')
-        let totalShow = document.querySelector('.money');
         totalShow.innerHTML = totalB;
     }
-    let amountOrder = document.querySelector('.cart p b')
-    let amountOrder1 = document.querySelector('#cartBtn a span')
-    num++;
-    amountOrder.innerText = num
-    amountOrder1.innerText = num
+
+    deleteCart()
+
+}
+
+
+function deleteCart() {
     let cancelOrder = document.querySelectorAll('#cancel-btn')
     cancelOrder.forEach(function (i) {
         i.addEventListener("click", e => {
@@ -60,6 +68,22 @@ function cartTotal() {
             let cancelItem1 = cancelItem.parentElement
             var listCart = document.querySelector('tbody')
             listCart.removeChild(cancelItem1)
+            console.log(cancelOrder)
+            let amountOrder = document.querySelector('.cart p b')
+            let amountOrder1 = document.querySelector('#cartBtn a span')
+            num = amountOrder.innerText - 1
+            num1 = amountOrder1.innerText - 1
+            console.log(num)
+            console.log(num1)
+            console.log(amountOrder)
+            console.log(amountOrder1)
+            amountOrder.innerText = num
+            amountOrder1.innerText = num1
+            cartTotal()
+            if (cancelOrder.length == 1) {
+                let totalShow = document.querySelector('.money');
+                totalShow.innerHTML = 0
+            }
             // for (let index = 0; index < cancelItem1.length; index++) {
             //     let orderNumReduce = cancelItem1[index].querySelector('.number-order').innerText;
             //     let productPriceReduce = cancelItem1[index].querySelector('.product-price-detail').innerText;
@@ -72,8 +96,13 @@ function cartTotal() {
         })
     })
 }
-
-
+// function reduceNum() {
+//     let amountOrder = document.querySelector('.cart p b')
+//     let amountOrder1 = document.querySelector('#cartBtn a span')
+//     num = 1
+//     amountOrder.innerText = amountOrder - 1
+//     amountOrder1.innerText = amountOrder1 - 1
+// }
 let productPrice = document.querySelectorAll('.col p b')
 for (let index = 0; index < productPrice.length; index++) {
     let value = productPrice[index].innerText
