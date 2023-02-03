@@ -345,7 +345,42 @@ a.nav-link {
     display: none
 }
 
+#menu-res {
+    display: none
+}
+
 @media screen and (max-width: 576px) {
+    #menu-brand-res {
+        display: none
+    }
+
+    .offcanvas-title {
+        padding-top: 30px
+    }
+
+    #menu-res .container-fluid {
+        display: flex;
+        width: 50px;
+        right: 3%;
+        top: 4%;
+        -webkit-box-shadow: 0px 0px 0px 0px;
+    }
+
+    .offcanvas-body {
+        padding: 50px 10px
+    }
+    .offcanvas-body li{
+        padding-bottom:20px
+    }
+    .offcanvas-body li a{
+        font-size:20px;
+        font-weight:600;
+        color:rgb(37, 36, 36)
+    }
+    #menu-res {
+        display: flex
+    }
+
     #phone-number {
         display: none
     }
@@ -421,12 +456,14 @@ a.nav-link {
         width: 100%
     }
 
-    #row-res div {
-        margin-left: 0;
-        padding:0
+
+
+    .res nav {
+        padding: 0
     }
-    #row-res{
-        margin:0
+
+    .res nav button {
+        border: 0
     }
 
     .col li a img {
@@ -436,14 +473,18 @@ a.nav-link {
     .fanpage img {
         width: 500px
     }
-    #service-id{
-        width:100%;
-        padding:0
+
+    #service-id {
+        width: 100%;
+        padding: 0
     }
-    .heading-product-list p{
-        margin-left:21%
+
+    .heading-product-list p {
+        margin-left: 21%
     }
-    .cart{
-        width:100%
+
+    .cart {
+        width: 100%;
+        height: 70%
     }
 }
