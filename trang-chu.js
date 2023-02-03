@@ -68,22 +68,22 @@ function deleteCart() {
             let cancelItem1 = cancelItem.parentElement
             var listCart = document.querySelector('tbody')
             listCart.removeChild(cancelItem1)
-            console.log(cancelOrder)
             let amountOrder = document.querySelector('.cart p b')
             let amountOrder1 = document.querySelector('#cartBtn a span')
             num = amountOrder.innerText - 1
             num1 = amountOrder1.innerText - 1
-            console.log(num)
-            console.log(num1)
-            console.log(amountOrder)
-            console.log(amountOrder1)
             amountOrder.innerText = num
             amountOrder1.innerText = num1
-            cartTotal()
-            if (cancelOrder.length == 1) {
+            if (amountOrder1.innerText == 0
+            ) {
                 let totalShow = document.querySelector('.money');
                 totalShow.innerHTML = 0
             }
+            cartTotal()
+            // if (cancelOrder.length == 1) {
+            //     let totalShow = document.querySelector('.money');
+            //     totalShow.innerHTML = 0
+            // }
             // for (let index = 0; index < cancelItem1.length; index++) {
             //     let orderNumReduce = cancelItem1[index].querySelector('.number-order').innerText;
             //     let productPriceReduce = cancelItem1[index].querySelector('.product-price-detail').innerText;

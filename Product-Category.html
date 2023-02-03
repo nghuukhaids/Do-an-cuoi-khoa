@@ -23,11 +23,32 @@
 
 <body>
     <div class="top-nav d-flex justify-content-between align-items-center" id="top-nav">
-        <div class="ps-5 fw-bold"><i class="bi bi-telephone-fill pe-2"></i>0934.343.324</div>
-        <div class="pe-5 d-flex justify-content-end " style="width:500px">
-            <div> <a href="#"><i class="bi bi-person-circle pe-2"></i>Tài khoản</a></div>
+
+        <div id="phone-number" class="ps-5 fw-bold"><i class="bi bi-telephone-fill pe-2"></i>0934.343.324</div>
+        <div id="service-nav" class="pe-5 d-flex justify-content-end " style="width:500px">
+            <div class="account"> <a href="#"><i class="bi bi-person-circle pe-2"></i>Tài khoản</a></div>
             <div style="padding-left:5rem" class="cart-btn" id="cartBtn"><a href="#"><i
-                        class="bi bi-bag-check-fill pe-2"></i> Giỏ hàng (0)</a></div>
+                        class="bi bi-bag-check-fill pe-2"></i> Giỏ hàng (<span>0</span>)</a>
+                <div class="cart">
+                    <p style="font-size:20px;font-weight:600">GIỎ HÀNG</p>
+                    <p style="font-size:15px">Bạn đang có <b>0</b> sản phẩm trong giỏ hàng</p>
+                    <hr>
+                    <table>
+                        <tbody class="list-cart">
+                        </tbody>
+                    </table>
+                    <hr style="border:2px solid black">
+                    <div class="bill d-flex justify-content-between" style="font-size:15px;font-weight:600">
+                        <p>TỔNG TIỀN TẠM TÍNH</p>
+                        <div class="d-flex">
+                            <div class="money">0</div><span>đ</span>
+                        </div>
+                    </div>
+                    <button class="order-btn">TIẾN HÀNH ĐẶT HÀNG</button>
+                    <div class="cart-detail-search">Xem chi tiết giỏ hàng<i style="padding-left:5px;color:black"
+                            class="bi bi-arrow-right-circle-fill"></i></div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- <div class="cart">GIỎ HÀNG</div> -->
@@ -220,9 +241,9 @@
                 <li class="img-container"> <a href="./Product-detail.html"><img
                             src="./img/san pham moi/san-pham-moi-1.jpg"></a></li>
                 <p style="padding-top:10px">Áo khoác nỉ</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
-                    <li><a href="#">Mua nhanh</a></li>
+                    <li class="click-to-buy"><a href="javascript:void(0)">Mua nhanh</a></li>
                     <li><a href="./Product-detail.html">Xem chi tiết</a></li>
                 </ul>
             </div>
@@ -230,7 +251,7 @@
                 <li class="img-container"><a href="./Product-detail.html"><img
                             src="./img/san pham moi/san-pham-moi-2.jpg"></a></li>
                 <p style="padding-top:10px">Áo khoác nỉ</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -240,7 +261,7 @@
                 <li class="img-container"><a href="./Product-detail.html"><img
                             src="./img/san pham moi/san-pham-moi-3.jpg"></a></li>
                 <p style="padding-top:10px">Áo blazer</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -250,7 +271,7 @@
                 <li class="img-container"><a href="./Product-detail.html"><img
                             src="./img/san pham moi/san-pham-moi-4.jpg"></a></li>
                 <p style="padding-top:10px">Áo phao</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -262,7 +283,7 @@
                 <li class="img-container"><a href="./Product-detail.html"><img
                             src="./img/san pham moi/san-pham-moi-5.jpg"></a></li>
                 <p style="padding-top:10px">Áo blazer</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -272,7 +293,7 @@
                 <li class="img-container"><a href="./Product-detail.html"><img
                             src="./img/san pham moi/san-pham-moi-6.jpg"></a></li>
                 <p style="padding-top:10px">Áo blazer</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -282,7 +303,7 @@
                 <li class="img-container"><a href="./Product-detail.html"><img
                             src="./img/san pham moi/san-pham-moi-7.jpg"></a></li>
                 <p style="padding-top:10px">Áo khoác jean</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -292,7 +313,7 @@
                 <li class="img-container"><a href="./Product-detail.html"><img
                             src="./img/san pham moi/san-pham-moi-8.jpg"></a></li>
                 <p style="padding-top:10px">Áo khoác nhung</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -306,7 +327,7 @@
                 <li class="img-container"> <a href="./Product-detail.html"><img
                             src="./img/sp ban chay/sp ban chay 1.jpg"></a></li>
                 <p style="padding-top:10px">Áo sweater trắng</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -316,7 +337,7 @@
                 <li class="img-container"> <a href="./Product-detail.html"><img
                             src="./img/sp ban chay/sp ban chay 2.jpg"></a></li>
                 <p style="padding-top:10px">Áo sweater nâu</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -326,7 +347,7 @@
                 <li class="img-container"> <a href="./Product-detail.html"><img
                             src="./img/sp ban chay/sp ban chay 3.jpg"></a></li>
                 <p style="padding-top:10px">Áo cổ lọ</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -336,7 +357,7 @@
                 <li class="img-container"> <a href="./Product-detail.html"><img
                             src="./img/sp ban chay/sp ban chay 4.jpg"></a></li>
                 <p style="padding-top:10px">Áo sweater xanh</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -348,7 +369,7 @@
                 <li class="img-container"> <a href="./Product-detail.html"><img
                             src="./img/sp ban chay/sp ban chay 5.jpg"></a></li>
                 <p style="padding-top:10px">Quần âu kem</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -358,7 +379,7 @@
                 <li class="img-container"> <a href="./Product-detail.html"><img
                             src="./img/sp ban chay/sp ban chay 6.jpg"></a></li>
                 <p style="padding-top:10px">Quần âu đen</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -368,7 +389,7 @@
                 <li class="img-container"> <a href="./Product-detail.html"><img
                             src="./img/sp ban chay/sp ban chay 7.jpg"></a></li>
                 <p style="padding-top:10px">Quần âu</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -378,7 +399,7 @@
                 <li class="img-container"> <a href="./Product-detail.html"><img
                             src="./img/sp ban chay/sp ban chay 8.jpg"></a></li>
                 <p style="padding-top:10px">Quần âu</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -390,7 +411,7 @@
                 <li class="img-container"> <a href="./Product-detail.html"><img
                             src="./img/san pham moi/san-pham-moi-1.jpg"></a></li>
                 <p style="padding-top:10px">Áo khoác nỉ</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="./Product-detail.html">Xem chi tiết</a></li>
@@ -400,7 +421,7 @@
                 <li class="img-container"><a href="./Product-detail.html"><img
                             src="./img/san pham moi/san-pham-moi-2.jpg"></a></li>
                 <p style="padding-top:10px">Áo khoác nỉ</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -410,7 +431,7 @@
                 <li class="img-container"><a href="./Product-detail.html"><img
                             src="./img/san pham moi/san-pham-moi-3.jpg"></a></li>
                 <p style="padding-top:10px">Áo blazer</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -420,7 +441,7 @@
                 <li class="img-container"><a href="./Product-detail.html"><img
                             src="./img/san pham moi/san-pham-moi-4.jpg"></a></li>
                 <p style="padding-top:10px">Áo phao</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -432,7 +453,7 @@
                 <li class="img-container"><a href="./Product-detail.html"><img
                             src="./img/san pham moi/san-pham-moi-5.jpg"></a></li>
                 <p style="padding-top:10px">Áo blazer</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -442,7 +463,7 @@
                 <li class="img-container"><a href="./Product-detail.html"><img
                             src="./img/san pham moi/san-pham-moi-6.jpg"></a></li>
                 <p style="padding-top:10px">Áo blazer</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -452,7 +473,7 @@
                 <li class="img-container"><a href="./Product-detail.html"><img
                             src="./img/san pham moi/san-pham-moi-7.jpg"></a></li>
                 <p style="padding-top:10px">Áo khoác jean</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -462,7 +483,7 @@
                 <li class="img-container"><a href="./Product-detail.html"><img
                             src="./img/san pham moi/san-pham-moi-8.jpg"></a></li>
                 <p style="padding-top:10px">Áo khoác nhung</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -476,7 +497,7 @@
                 <li class="img-container"> <a href="./Product-detail.html"><img
                             src="./img/sp ban chay/sp ban chay 1.jpg"></a></li>
                 <p style="padding-top:10px">Áo sweater trắng</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -486,7 +507,7 @@
                 <li class="img-container"> <a href="./Product-detail.html"><img
                             src="./img/sp ban chay/sp ban chay 2.jpg"></a></li>
                 <p style="padding-top:10px">Áo sweater nâu</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -496,7 +517,7 @@
                 <li class="img-container"> <a href="./Product-detail.html"><img
                             src="./img/sp ban chay/sp ban chay 3.jpg"></a></li>
                 <p style="padding-top:10px">Áo cổ lọ</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -506,7 +527,7 @@
                 <li class="img-container"> <a href="./Product-detail.html"><img
                             src="./img/sp ban chay/sp ban chay 4.jpg"></a></li>
                 <p style="padding-top:10px">Áo sweater xanh</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -518,7 +539,7 @@
                 <li class="img-container"> <a href="./Product-detail.html"><img
                             src="./img/sp ban chay/sp ban chay 5.jpg"></a></li>
                 <p style="padding-top:10px">Quần âu kem</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -528,7 +549,7 @@
                 <li class="img-container"> <a href="./Product-detail.html"><img
                             src="./img/sp ban chay/sp ban chay 6.jpg"></a></li>
                 <p style="padding-top:10px">Quần âu đen</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -538,7 +559,7 @@
                 <li class="img-container"> <a href="./Product-detail.html"><img
                             src="./img/sp ban chay/sp ban chay 7.jpg"></a></li>
                 <p style="padding-top:10px">Quần âu</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -548,7 +569,7 @@
                 <li class="img-container"> <a href="./Product-detail.html"><img
                             src="./img/sp ban chay/sp ban chay 8.jpg"></a></li>
                 <p style="padding-top:10px">Quần âu</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -560,7 +581,7 @@
                 <li class="img-container"> <a href="./Product-detail.html"><img
                             src="./img/san pham moi/san-pham-moi-1.jpg"></a></li>
                 <p style="padding-top:10px">Áo khoác nỉ</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="./Product-detail.html">Xem chi tiết</a></li>
@@ -570,7 +591,7 @@
                 <li class="img-container"><a href="./Product-detail.html"><img
                             src="./img/san pham moi/san-pham-moi-2.jpg"></a></li>
                 <p style="padding-top:10px">Áo khoác nỉ</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -580,7 +601,7 @@
                 <li class="img-container"><a href="./Product-detail.html"><img
                             src="./img/san pham moi/san-pham-moi-3.jpg"></a></li>
                 <p style="padding-top:10px">Áo blazer</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -590,7 +611,7 @@
                 <li class="img-container"><a href="./Product-detail.html"><img
                             src="./img/san pham moi/san-pham-moi-4.jpg"></a></li>
                 <p style="padding-top:10px">Áo phao</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -602,7 +623,7 @@
                 <li class="img-container"><a href="./Product-detail.html"><img
                             src="./img/san pham moi/san-pham-moi-5.jpg"></a></li>
                 <p style="padding-top:10px">Áo blazer</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -612,7 +633,7 @@
                 <li class="img-container"><a href="./Product-detail.html"><img
                             src="./img/san pham moi/san-pham-moi-6.jpg"></a></li>
                 <p style="padding-top:10px">Áo blazer</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -622,7 +643,7 @@
                 <li class="img-container"><a href="./Product-detail.html"><img
                             src="./img/san pham moi/san-pham-moi-7.jpg"></a></li>
                 <p style="padding-top:10px">Áo khoác jean</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -632,7 +653,7 @@
                 <li class="img-container"><a href="./Product-detail.html"><img
                             src="./img/san pham moi/san-pham-moi-8.jpg"></a></li>
                 <p style="padding-top:10px">Áo khoác nhung</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -646,7 +667,7 @@
                 <li class="img-container"> <a href="./Product-detail.html"><img
                             src="./img/sp ban chay/sp ban chay 1.jpg"></a></li>
                 <p style="padding-top:10px">Áo sweater trắng</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -656,7 +677,7 @@
                 <li class="img-container"> <a href="./Product-detail.html"><img
                             src="./img/sp ban chay/sp ban chay 2.jpg"></a></li>
                 <p style="padding-top:10px">Áo sweater nâu</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -666,7 +687,7 @@
                 <li class="img-container"> <a href="./Product-detail.html"><img
                             src="./img/sp ban chay/sp ban chay 3.jpg"></a></li>
                 <p style="padding-top:10px">Áo cổ lọ</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -676,7 +697,7 @@
                 <li class="img-container"> <a href="./Product-detail.html"><img
                             src="./img/sp ban chay/sp ban chay 4.jpg"></a></li>
                 <p style="padding-top:10px">Áo sweater xanh</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -688,7 +709,7 @@
                 <li class="img-container"> <a href="./Product-detail.html"><img
                             src="./img/sp ban chay/sp ban chay 5.jpg"></a></li>
                 <p style="padding-top:10px">Quần âu kem</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -698,7 +719,7 @@
                 <li class="img-container"> <a href="./Product-detail.html"><img
                             src="./img/sp ban chay/sp ban chay 6.jpg"></a></li>
                 <p style="padding-top:10px">Quần âu đen</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -708,7 +729,7 @@
                 <li class="img-container"> <a href="./Product-detail.html"><img
                             src="./img/sp ban chay/sp ban chay 7.jpg"></a></li>
                 <p style="padding-top:10px">Quần âu</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -718,7 +739,7 @@
                 <li class="img-container"> <a href="./Product-detail.html"><img
                             src="./img/sp ban chay/sp ban chay 8.jpg"></a></li>
                 <p style="padding-top:10px">Quần âu</p>
-                <p><b>999.000đ</b></p>
+                <p><b>999000</b></p>
                 <ul>
                     <li><a href="#">Mua nhanh</a></li>
                     <li><a href="#">Xem chi tiết</a></li>
@@ -893,6 +914,7 @@
             <img src="./image/Screenshot_1.png" alt="">
         </div>
     </div>
+    <script src="./trang-chu.js"></script>
 </body>
 
 </html>
