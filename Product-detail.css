@@ -160,6 +160,10 @@
 .save i {
     padding-right: 10px;
 }
+#button-addon2:hover{
+    cursor: pointer;
+  
+}
 
 .save:hover {
     cursor: pointer;
@@ -249,7 +253,7 @@
 }
 
 #button-addon2 {
-    z-index: -999
+    z-index: 0
 }
 
 @media screen and (max-width: 576px) {
