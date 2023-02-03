@@ -432,4 +432,7 @@ a.nav-link {
     .fanpage img {
         width: 500px
     }
+    #service-id{
+        width:100%
+    }
 }
