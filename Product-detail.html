@@ -55,36 +55,52 @@
                 <div class="res">
                     <a class="navbar-brand" href="./Trang-chu.html"><img style="width:100px"
                             src="./img/icon/KRIK-icon.png" alt=""></a>
-                    <button id="button-res" class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon" id="icon-res"></span>
-                    </button>
-                    <button id="btn-menu">
-                        <i class="bi bi-list"></i>
-                        <div class="nav-bar-ul-res">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex mx-auto" style="width:100%">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">TẾT QUÝ MÃO</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./Product-Category.html">ÁO NAM</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./Product-Category.html">QUẦN NAM</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./Product-Category.html">PHỤ KIỆN</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">TIN TỨC</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">GIỚI THIỆU</a>
-                                </li>
-                            </ul>
+                    <nav class="navbar bg-body-tertiary fixed-top" id="menu-res">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#" id="menu-brand-res">Menu</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                                aria-labelledby="offcanvasNavbarLabel">
+                                <div class="offcanvas-header">
+                                    <h5 style="font-size:40px;font-weight:700" class="offcanvas-title"
+                                        id="offcanvasNavbarLabel">KRIK</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="./Product-Category.html">TẾT QUÝ MÃO</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="./Product-Category.html">ÁO NAM</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="./Product-Category.html">QUẦN NAM</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="./Product-Category.html">PHỤ KIỆN</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">TIN TỨC</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">GIỚI THIỆU</a>
+                                        </li>
+                                    </ul>
+                                    <form class="d-flex mt-3" role="search">
+                                        <input class="form-control me-2" type="search" placeholder="Tìm sản phẩm"
+                                            aria-label="Search">
+                                        <button class="btn btn-outline-success" type="submit">Search</button>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
-                    </button>
+                    </nav>
+            
                 </div>
                 <div id="nav-bar-ul">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex mx-auto" style="width:100%">
@@ -133,19 +149,20 @@
                         <form class="d-flex" style="padding-left:40%" role="search">
                             <input class="form-control me-2" type="search" placeholder="Tìm kiếm..."
                                 aria-label="Search">
-                         
+
                         </form>
                     </div>
                 </div>
             </div>
     </nav>
     <div class="product-address d-flex " style="padding-top:100px;width: 90rem">
-        <span class="fw-bold" style="padding:0 20px;font-size:15px"> <a href="./Trang-chu.html"><i class="bi bi-house-door-fill"></i> Trang
-            chủ</a></span>
+        <span class="fw-bold" style="padding:0 20px;font-size:15px"> <a href="./Trang-chu.html"><i
+                    class="bi bi-house-door-fill"></i> Trang
+                chủ</a></span>
         <span class="fw-bold" style="padding:0 20px;font-size:15px"><a href="./Trang-chu.html">Ác khoác</a></span>
         <span style="padding:0 20px;font-size:15px">Áo khoác dạ</span>
     </div>
-    <div class="container d-flex">
+    <div class="container d-flex" id="container-detail">
         <div class="product-img">
             <div class="main">
                 <img class="main-img" src="./img/ao nam/ao nam 1.jpg">
@@ -161,9 +178,9 @@
             </div>
         </div>
         <div class="product-detail">
-            <b style="font-size:20px">Áo Khoác Dạ 0416</b>
+            <b class="name" style="font-size:20px">Áo Khoác Dạ 0416</b>
             <hr>
-            <b style="font-size:35px">999.000đ</b>
+            <b class="price" style="font-size:35px">999.000đ</b>
             <p style="font-weight:500;padding-top:10px;margin-bottom:0">MÀU SẮC</p>
             <div class="color d-flex">
                 <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top"
@@ -194,7 +211,8 @@
                 <div class="more numberbtn">+</div>
             </div>
             <div class="buy-btn d-flex" style=" margin-top:10px">
-                <button type="button" class="btn btn-dark" style="margin-right:10px"  onclick="addToCart()">THÊM VÀO GIỎ HÀNG</button>
+                <button type="button" class="btn btn-dark" style="margin-right:10px" onclick="addToCart()">THÊM VÀO GIỎ
+                    HÀNG</button>
                 <button type="button" class="btn btn-dark">MUA NGAY</button>
             </div>
             <div class="save-share d-flex">
