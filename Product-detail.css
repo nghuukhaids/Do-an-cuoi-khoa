@@ -160,14 +160,33 @@
 .save i {
     padding-right: 10px;
 }
-#button-addon2:hover{
+
+#button-addon2:hover {
     cursor: pointer;
-  
+
 }
 
 .save:hover {
     cursor: pointer;
 }
+
+#order-btn-id {
+    margin-right: 0;
+}
+
+#order-btn-id div {
+    margin-right: 0;
+}
+.product-address a{
+    text-decoration: none;
+    color:black
+}
+
+#order-btn-id:focus {
+    border: 1px solid rgba(82, 82, 82, 0.522)
+}
+
+
 
 .share {
     gap: 30px;
@@ -257,16 +276,19 @@
 }
 
 @media screen and (max-width: 576px) {
-    #top-nav{
-        width:100vw
+    #top-nav {
+        width: 100vw
     }
-    #nav-control{
-        width:100vw
+
+    #nav-control {
+        width: 100vw
     }
-    .container-fluid{
-        width:100vw
+
+    .container-fluid {
+        width: 100vw
     }
-    #search-id{
-        width:50%
+
+    #search-id {
+        width: 50%
     }
 }
