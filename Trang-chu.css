@@ -421,8 +421,12 @@ a.nav-link {
         width: 100%
     }
 
-    #row-res {
+    #row-res div {
         margin-left: 0;
+        padding:0
+    }
+    #row-res{
+        margin:0
     }
 
     .col li a img {
@@ -433,6 +437,10 @@ a.nav-link {
         width: 500px
     }
     #service-id{
-        width:100%
+        width:100%;
+        padding:0
+    }
+    .heading-product-list p{
+        margin-left:21%
     }
 }
